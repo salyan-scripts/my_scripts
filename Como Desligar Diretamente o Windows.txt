@@ -1,0 +1,11 @@
+Como Desligar Corretamente o Windows10/11
+
+*botao iniciar+R:
+# msconfig
+
+*aba serviços:
+    *ocultar todos os serviços...
+        *so deixa o que quer...
+*pesquisa CMD e botão direito abrir como admin.
+#powercfg -h off
+*obs: antes de execultar o comando acima abra o win+E so pra ver se altero o tamanho da particao do windows na hora que executar o comando.
