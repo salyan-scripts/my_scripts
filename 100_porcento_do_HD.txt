@@ -1,0 +1,4 @@
+sc config "Power" start=disabled
+ ou
+
+sc config "Power" start=auto
