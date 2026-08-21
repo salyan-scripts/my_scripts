@@ -1,0 +1,1 @@
+watch -n 1 "echo '=== TEMPERATURA DA CPU ===' && sensors | grep -E 'Package|Core' && echo '' && echo '=== FREQUÊNCIA DOS NÚCLEOS (MHz) ===' && grep 'cpu MHz' /proc/cpuinfo | awk '{print \"Core \" NR-1 \": \" \$4 \" MHz\"}' && echo '' && echo '=== CLOCK DA iGPU ===' && cat /sys/devices/pci0000:00/0000:00:02.0/drm/card1/gt_act_freq_mhz 2>/dev/null | sed 's/$/ MHz/'"
